@@ -44,11 +44,16 @@ public class LinkList {
         } else {
             Node temp = head;
             while (temp != null) {
-                System.out.println(temp.data);
+               if(temp.next != null)
+                    System.out. print(temp.data + " --> ");
+                else System.out.println(temp.data);
                 temp = temp.next;
             }
         }
 
+    }
+    public void pop() {
+        this.head = this.head.next;
     }
 
 }

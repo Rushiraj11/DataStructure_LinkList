@@ -7,6 +7,8 @@ public class LinkedListMain {
         System.out.println("Enter 1 to add element at the start");
         System.out.println("Enter 2 to add element at the End");
         System.out.println("Enter 3 to insert element in Between");
+        System.out.println("Enter 4 to insert element in Between");
+
         switch (sc.nextInt()) {
             case 1:
                 Operations.addElementAtStart();
@@ -16,6 +18,9 @@ public class LinkedListMain {
                 break;
             case 3:
                 Operations.insertInBetween();
+                break;
+            case 4:
+                Operations.deleteFirstNode();
                 break;
         }
 

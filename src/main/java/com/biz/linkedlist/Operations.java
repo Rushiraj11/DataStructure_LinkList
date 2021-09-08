@@ -1,14 +1,14 @@
 package com.biz.linkedlist;
 
 public class Operations {
-    public static void addElementAtStart() {
+    public static LinkList addElementAtStart() {
         LinkList linkedList = new LinkList();
         linkedList.push(70);
         linkedList.push(30);
         linkedList.push(56);
 
         linkedList.print();
-
+        return linkedList;
     }
 
     public static void addElementAtEnd() {
@@ -32,7 +32,11 @@ public class Operations {
         linkedList.print();
 
     }
-
+    public static void deleteFirstNode() {
+        LinkList linkedList = addElementAtStart();
+        linkedList.pop();
+        linkedList.print();
+    }
 
 }
 
