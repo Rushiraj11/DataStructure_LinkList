@@ -4,7 +4,7 @@ public class LinkList {
     Node head;
     Node tail;
 
-    public void push(int data) {
+    public Node push(int data) {
         Node newNode = new Node(data);
 
         if (head == null) {
@@ -16,6 +16,7 @@ public class LinkList {
             newNode.next = temp;
         }
 
+        return newNode;
     }
       public  void appened(int data){
          Node newNode = new Node(data);
@@ -29,11 +30,17 @@ public class LinkList {
 
       }
 
+    public static void insertInBetween(Node previousNode ,Node newNode) {
+        Node tempNode = previousNode.next;
+        previousNode.next = newNode;
+        newNode.next = tempNode;
+    }
 
-    public void print() {
+
+
+        public void print() {
         if (head == null) {
             System.out.println("Linked list is Empty");
-            return;
         } else {
             Node temp = head;
             while (temp != null) {

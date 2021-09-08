@@ -19,4 +19,20 @@ public class Operations {
 
        linkedList.print();
     }
+
+    public static void insertInBetween() {
+        LinkList linkedList = new LinkList();
+        Node secondNode = linkedList.push(70);
+        Node firstNode = linkedList.push(56);
+        System.out.println("Before:");
+        linkedList.print();
+        Node newNode= new Node(30);
+        linkedList.insertInBetween(firstNode, newNode); //inserting new node key value as newNode after previousNode
+        System.out.println("after:");
+        linkedList.print();
+
+    }
+
+
 }
+
