@@ -12,11 +12,22 @@ public class LinkList {
             this.tail = newNode;
         } else {
             Node temp = head;
-            this.head = newNode;
+            this.head = newNode; // head is changing
             newNode.next = temp;
         }
 
     }
+      public  void appened(int data){
+         Node newNode = new Node(data);
+          if (head == null) {
+              head = newNode;
+              tail = newNode;
+          } else {
+              this.tail.next = newNode; // tail is changing
+              tail = newNode;
+          }
+
+      }
 
 
     public void print() {

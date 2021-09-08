@@ -10,4 +10,13 @@ public class Operations {
         linkedList.print();
 
     }
+
+    public static void addElementAtEnd() {
+       LinkList linkedList = new LinkList();
+       linkedList.appened(56);
+       linkedList.appened(30);
+       linkedList.appened(70);
+
+       linkedList.print();
+    }
 }
