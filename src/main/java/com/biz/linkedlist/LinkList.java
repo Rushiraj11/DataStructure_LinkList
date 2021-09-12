@@ -66,4 +66,28 @@ public class LinkList {
         tempNode.next =null;
 
     }
+
+    public void searchNode(int value) {
+
+        Node tempNode = head;
+        int index = 1;
+        boolean flag = false;
+        if (head == null) {
+            System.out.println("List is empty");
+        } else {
+            while (tempNode != null) {
+                if (tempNode.data == value) {
+                    flag = true;
+                    break;
+                }
+                index++;
+                tempNode = tempNode.next;
+            }
+        }
+        if (flag == true) {
+            System.out.println("Value:" + value + " is present at Index:" + index);
+        } else {
+            System.out.println("Element no present");
+        }
+    }
 }

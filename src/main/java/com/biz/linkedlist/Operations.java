@@ -44,5 +44,10 @@ public class Operations {
         linkedList.print();
 
     }
+
+    public static void findNodeBasedOnValue() {
+        LinkList linkedList = addElementAtStart();
+        linkedList.searchNode(30);
+    }
 }
 
