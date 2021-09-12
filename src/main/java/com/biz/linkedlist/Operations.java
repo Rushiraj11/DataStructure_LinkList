@@ -27,7 +27,7 @@ public class Operations {
         System.out.println("Before:");
         linkedList.print();
         Node newNode= new Node(30);
-        linkedList.insertInBetween(firstNode, newNode); //inserting new node key value as newNode after previousNode
+        linkedList.insertInBetween(firstNode, newNode); //inserting new key value after previousNode
         System.out.println("after:");
         linkedList.print();
 
@@ -38,5 +38,11 @@ public class Operations {
         linkedList.print();
     }
 
+    public static void deleteLastNode() {
+        LinkList linkedList = addElementAtStart();
+        linkedList.popLast();
+        linkedList.print();
+
+    }
 }
 
